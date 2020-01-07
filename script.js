@@ -16,10 +16,10 @@ $(document).ready(function () {
 
 for (i = 0; i < 9; i++) {
     let rowBlock = $('<div>').addClass('row')
-    let timeBlock = $('<div>').addClass('hour').text(moment('9:00 AM', 'hh:mm A').add(i, 'hours').format('hA')).css('width', '10%')
+    let timeBlock = $('<div>').addClass('hour col-md-2').text(moment('9:00 AM', 'hh:mm A').add(i, 'hours').format('hA'))
     timeBlock.attr('data-time', moment('9:00 AM', 'hh:mm A').add(i, 'hours').format('hA'))
-    let taskBlock = $('<textarea>').css('width', '80%')
-    let saveButton = $('<button>').addClass('saveBtn').html('<i class="fas fa-save"></i>')
+    let taskBlock = $('<textarea>').addClass('col-md-9')
+    let saveButton = $('<button>').addClass('saveBtn col-md-1').html('<i class="fas fa-save"></i>')
 
     $('.container').append(rowBlock)
     $(rowBlock).append(timeBlock)

@@ -4,15 +4,6 @@ body {
   font-size: .8em;
   line-height: 1;
 }
-
-.container{
-  margin:0 auto;
-  width:900px;
-  height: 700px;
-}
-
-
-
 textarea{
   background: transparent;
   border: none;
@@ -58,17 +49,17 @@ textarea{
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: black;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color:black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color:black;
 }
 
 .saveBtn {
@@ -77,8 +68,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 10px 25px 10px 25px;
 }
 
 .saveBtn i:hover {
@@ -96,14 +86,7 @@ footer {
 	align-items: center;
   justify-content: center;
   margin-top: 10%;
-  
-  
 }
-
-
-
-
-
 
 .footer-copyright {
 	font-size: 13px;
@@ -117,4 +100,21 @@ footer {
 	font-size: 13px;
 	color: #cccccc;
 }
+
+
+/* media query for screen size*/
+@media (max-width: 768px) {
+ 
+  .row {
+    height: 100%;
+    border-radius: 10;
+    margin: 10px;
+  }
+
+  .saveBtn { border-radius: 0 0 15px 15px; }
+
+  .hour { border-radius: 15px 15px 0 0;}
+}
+
+
 
